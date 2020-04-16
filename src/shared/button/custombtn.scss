@@ -1,0 +1,20 @@
+.custom-button{
+    .button{
+        padding: 4px 16px;
+        text-transform: uppercase;
+        color: #112D46;
+        border: 1px solid #112D46;
+        background: none;
+        border-radius: 45px;
+        &:hover{
+            color: white;
+            background-color: #112D46;
+            transition: background-color 1s ease-in-out;
+        }
+
+        &:active, &:focus{
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}

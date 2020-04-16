@@ -1,0 +1,42 @@
+$break-medium: 520px;
+
+.main-wrapper{
+    
+    .heading-1{
+        
+        color: #112D46;
+        font: Lato;
+        font-size: medium;
+
+        h3{
+            @media screen and (max-width: $break-medium) {
+                font-size: 22px !important;     
+            }
+        }
+
+        .lower-line{
+            background-color: #464211;
+            width: 170px;
+            margin: 0px auto;
+            height: 1px;
+            padding: 1px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .heading-2{
+        text-align: center;
+        font: Lato;
+        width: 530px;
+        margin: 0px auto;
+        color: #605E5E;
+        font-size: 18px;
+        
+        @media screen and (max-width: $break-medium) {
+            width: 100%;
+            font-size: 15px !important;     
+            .heading-1{ h3{ font-size: 10px !important; } }
+        }
+    }
+ 
+}

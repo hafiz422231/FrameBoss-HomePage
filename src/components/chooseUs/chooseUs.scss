@@ -1,0 +1,91 @@
+$break-medium: 480px;
+$break-medium-up: 576px;
+$break-medium-large: 768px;
+$break-large: 990px;
+
+.choose-wrapper{
+    .row{
+        padding: 0px 70px;
+
+        .icons{
+            
+            .left{
+                height: 100%;
+                .row-inner{
+                    
+                    max-height: 100px;
+
+                    .left-inner{
+                        img{ position: relative; width: 60px; }
+                    }
+                    .right-inner{
+                        
+                        max-width: 100%;
+                        padding-left: 70px;
+                        position: relative;
+                        top: -60px;
+
+                        .inner-text{
+                            .heading{
+                                color: #112D46;
+                                font-size: 14px;
+                            }   
+                            .txt{
+                                margin-top: -6px;
+                                color: #605E5E;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .button{
+                margin-top: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
+                
+            }
+        }
+
+        .right{
+            img{
+                width: 100%;
+            }
+            
+            .frame{
+                position: relative;
+            }
+            .pic{
+                position: absolute;
+                top: 70px;
+                left: 90px;
+            }
+            
+            @media screen and (min-width: $break-medium-large) and (max-width: $break-large){
+                display: inline-block;
+                padding-left: 0px;
+                padding-top: 100px;
+                .pic{ top: 140px; left: 40px; }
+            }
+
+            @media screen and (max-width: $break-medium-large){
+                width: 93%;
+                padding-top: 20px;
+                .pic{ top: 63px !important; left: 58px !important; }
+            }
+
+        }
+        
+        @media screen and (max-width: $break-medium){
+            padding: 0px 28px;
+        }
+        
+        @media screen and (max-width: $break-medium-large){
+            .button{ width: 100%; margin-bottom: 15px; margin-top: 5px !important; }
+            .frame{width: 85% !important;}
+            .pic{ width: 85% !important; top: 70px !important; left: 65px !important; }            
+        }
+    }
+}

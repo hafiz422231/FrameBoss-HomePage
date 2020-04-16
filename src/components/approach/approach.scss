@@ -1,0 +1,96 @@
+$break-medium: 480px;
+$break-medium-large: 768px;
+$break-large: 990px;
+
+.approch-wrapper{
+    margin-top: 15px;
+    
+    .row{
+        padding: 0px 70px;
+
+        .left{
+            #pro{
+                max-width: 100%;
+            }
+        }
+        .right{
+
+            .top-heading{
+                    padding: 150px 20px 10px 20px;
+                    
+                    @media screen and (max-width: $break-medium-large) {
+                        padding: 50px 20px 10px 20px;
+                        .title{
+                            font-size: 25px;
+                        }
+                        .button{ width: 100%; margin-top: 0px; }       
+                        .social-texts{ display: none; }
+                    }
+
+                .title{
+                    color: #112D46;
+                    text-transform: uppercase;
+                }
+
+                .inner-text{
+                    //border: 1px solid red;
+                    margin-right: 80px;
+                    padding-top: 10px;
+                    #line{
+                        left: 0px;
+                        position: absolute;
+                        width: 80px;
+                        background-color: #112D46;
+                        height: 1px;
+                        padding: 1px;
+                        transform: rotate(90deg);
+                        margin-top: 50px;
+                    }
+                    p{
+                        color: #605E5E;
+                        font-size: 15px;
+                        margin-left: 30px;
+                        margin-top: 18px;
+                    }
+                }
+
+                .button{
+                    margin-top: 15px;
+                    padding: 7px 50px;
+                    font-size: 12px;
+                }
+
+                .social-texts{
+                    margin-top: 20px;
+                    margin-right: -60px;
+                    float: right;
+                    transform: rotate(90deg);
+//                    border: 1px solid red;
+
+                    p{
+                        margin-right: 30px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #9D9D9D;
+                        word-spacing: 1rem;
+                    }
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width: $break-medium) {
+            padding: 0px 26px;       
+        }
+        @media screen and (min-width: $break-medium-large) and (max-width: $break-large) {
+            .top-heading{ padding: 20px 10px 20px 20px !important; }
+            .title{ font-size: 25px; }
+            .button{ margin-top: 5px; }
+            .social-texts{ position: absolute; top: 200px; right: -40px; }
+            .inner-text{ margin-right: 20px !important; }
+        }
+
+    }
+
+}

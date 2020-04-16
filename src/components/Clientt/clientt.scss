@@ -1,0 +1,62 @@
+$break-meduim: 480px;
+$break-size: 577px;
+$break-meduim-large: 768px;
+$break-large: 990px;
+
+.client-wrapper{
+    margin-top: 200px;
+    .row{
+        padding: 0px 70px;
+
+        .text{
+            margin-top: 90px;
+
+            .title{
+                color: #112D46;
+            }
+
+            .title-heading{
+                color: #9D9D9D;
+            }
+
+            .inner-div{
+
+                margin-top: 20px;
+                
+
+                p:first-of-type{
+                    color: #605E5E;
+                }
+
+                img{
+                    width: 20px;
+                    margin-top: -13px;
+                }
+
+                .inner-arrows{
+                    span{
+                        color: #9D9D9D42;
+                        position: relative;
+                        top: -5px;
+                    }
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width: $break-meduim){
+            padding: 0px 28px;
+        }
+
+    }
+    
+    @media screen and (max-width: $break-meduim-large){
+        margin-top: 120px;            
+    }
+
+    @media screen and (min-width: $break-meduim-large) and (max-width: $break-large){
+        margin-top: 55px !important;
+    }
+
+}

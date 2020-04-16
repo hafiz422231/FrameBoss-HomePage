@@ -1,0 +1,30 @@
+$break-medium: 480px;
+
+.container-fluid{
+    margin-top: 40px;
+    background-color: #F9F9F9;
+    padding: 50px 0px 0px 0px;
+
+    .wrapper{
+
+        padding: 0px 70px 0px 70px;
+        .row{
+            .items{
+                word-spacing: 2px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #605E5E;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        
+        @media screen and (max-width: $break-medium){
+            padding: 0px 20px !important;
+        }
+
+    }
+
+}

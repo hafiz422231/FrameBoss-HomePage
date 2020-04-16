@@ -1,0 +1,97 @@
+$break-medium: 480px;
+$break-large: 990px;
+
+.navBar-wrapper{
+    
+    background-color: #F9F9F9;
+    padding: 0px 50px;
+
+    .navbar-expand-lg,.navbar-light,.bg-light{
+        background: #F9F9F9;    
+        .navbar-toggler{
+            &:active, &:focus{
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    #navbarTogglerDemo01{
+
+        #brand{
+            font-size: 27px;
+            text-transform: uppercase;
+            
+            @media screen and (max-width: $break-large){
+                display: none;    
+            }
+        }
+
+        .navbar-nav{
+            .nav-item{
+
+                @media screen and (max-width: $break-large){
+                    margin: 6px 0px !important;    
+                }
+
+                .link{
+                    text-transform: uppercase;
+                    color: #707070;
+                    &:hover{
+                        color: #707070;
+                        text-decoration: none;    
+                    }
+                }
+                
+                .nav-menus{
+                    background-color: #F9F9F9;
+                    padding: 5px 10px;
+                    width: 250px;
+                    position: absolute;
+                    z-index: 9999;
+                    .inner-link{
+                        font-size: 14px;
+                        margin: 10px 0px;
+                        display: block;
+                        color: #707070;
+                        &:hover{
+                            color: #707070;
+                            text-decoration: none;    
+                        }    
+                    }
+                }
+                
+            }
+        }
+
+        .right-icons{
+            .icon{
+                img{
+                    &:hover{
+                        color: #112D46;
+                    }
+                    @media screen and (max-width: $break-large){
+                        margin: 6px 0px 6px -12px !important;    
+                    }
+                }
+            }
+
+            #cart{
+                img{
+                  @media screen and (max-width: $break-large){
+                      position: fixed;
+                      top: 15px;
+                      right: 25px;
+                  }
+                } 
+              }
+
+        }
+
+    }
+
+    @media screen and (max-width: $break-medium) {
+        padding: 0px 8px;       
+    }
+
+}
